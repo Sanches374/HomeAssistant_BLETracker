@@ -1,6 +1,6 @@
 # HomeAssistant_BLETracker
-基于HomeAssistant MQTT Discovery 的 蓝牙RSSI判定在家状态项目。判断是否在家状态后，通过HA自动化进行智能联动。
-__本项目目前为Demo版，暂无后续更新计划...__
+基于HomeAssistant MQTT Discovery 的 蓝牙RSSI判定在家状态项目。判断是否在家状态后，通过HA自动化进行智能联动。  
+__本项目目前为Demo版，暂无后续更新计划...__  
 第一次在Github开源项目，有问题可以在Issues进行反馈，代码写的不好请轻喷...
 
 ## 开发基础
@@ -22,7 +22,8 @@ __本项目目前为Demo版，暂无后续更新计划...__
 ### `config.h`
 > * 修改`ssid`、`password`为需要连接的WIFI名和密码
 > * 修改`mqttServer`、`mqttPort`、`mqttUser`、`mqttPassword `为需要连接的MQTT服务器IP、端口、登录名和密码  
-> * 
+> * `client_id`、`blepresence_UID`、`blerssi_UID`可以根据个人需要进行修改
+> * `Presence_Config`、`RSSI_Config`、`Availability_topic`、`Presence_State`、`RSSI_State`和MQTT Discovery相关，如若修改请确定已认真阅读HomeAssistant MQTT Discovery官方文档[HomeAssistant MQTT Discovery官方文档](https://www.home-assistant.io/docs/mqtt/discovery/#:~:text=The%20discovery%20of%20MQTT%20devices%20will%20enable%20one,the%20HTTP%20binary%20sensor%20and%20the%20HTTP%20sensor.)
 ##
 * 将软件程烧录到ESP32C3中
 测试使用小米手环7打开蓝牙广播
