@@ -2,7 +2,9 @@
 基于HomeAssistant MQTT Discovery 的 蓝牙RSSI判定在家状态项目
 
 ## 开发基础
+### 硬件配置
 * 合宙ESP32C3开发板经典版（非简约版）
+### 软件配置
 * HomeAssistant系统
 * MQTT服务器
 
