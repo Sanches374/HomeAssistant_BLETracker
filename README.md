@@ -4,11 +4,11 @@
 ## 开发基础
 > ### 硬件配置
 > * 合宙ESP32C3开发板经典版（非简约版，两个按键间有元器件）
-> 
 > ![image](img/1.png)
+> 简约版（无按键版也可通过Arduino IDE进行开发）
 > ### 软件配置
 > * MQTT服务器
-> * HomeAssistant系统（配置好MQTT）
+> * HomeAssistant系统（已配置好MQTT）
 
 ## 开发环境
 > * VScode+platformio
