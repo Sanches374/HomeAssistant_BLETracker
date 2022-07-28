@@ -20,9 +20,16 @@ __本项目目前为Demo版，暂无后续更新计划...__
 ## 文件配置
 对两个`.h`文件进行相应修改
 ### `config.h`
-> * 修改`ssid`、`password`为需要连接的WIFI名和密码
+> __以下表中内容请务必进行修改__ 
 > 
-> * 修改`mqttServer`、`mqttPort`、`mqttUser`、`mqttPassword`为需要连接的MQTT服务器IP、端口、登录名和密码  
+> |  变量   | 备注  |
+> |  :-:  | :-  |
+> | `ssid`  | 连接WIFI的SSID |
+> | `password`  | 连接WIFI的SSID的密码 |
+> | `mqttServer`  |  MQTT服务器IP地址|
+> | `mqttPort`  | MQTT服务器端口号 |
+> | `mqttUser`  | MQTT服务器用户名 |
+> | `mqttPassword`  | MQTT服务器用户密码 |
 > 
 > * `client_id`、`blepresence_UID`、`blerssi_UID`可以根据个人需要进行修改
 > 
@@ -34,6 +41,12 @@ __本项目目前为Demo版，暂无后续更新计划...__
 > | `BLE_OffLine_N`  |  连续`BLE_OffLine_N`次扫描，没有扫描到蓝牙设备，确认其为离线状态|
 > | `BLE_Buff`  | 每次扫描蓝牙设备，缓冲区大小，大于最多扫描到蓝牙设备数量 |
 > | `scanTime`  | 执行一次扫描的时间 |
-##
-* 将软件程烧录到ESP32C3中
-测试使用小米手环7打开蓝牙广播
+> __以下内容请务必进行修改__ 
+> * `BLE_User BLE_Users`中的蓝牙MAC地址设置为需要检测设备的MAC地址（打开设备的蓝牙广播） 
+> `设备在线时RSSI下限` 描述为当扫描到的蓝牙RSSI（信号强度）大于这个数值，才判定为在家状态，否则为离家状态。合理的设置参数可以满足用于检测位于哪个房间。
+
+## 实现效果
+> * 追踪的蓝牙设备为小米手环7（通常为穿戴设备），在APP中打开蓝牙广播功能。
+> * 将软件程烧录到ESP32C3中
+> 测试结果如下
+> ![image](img/2.png) 
