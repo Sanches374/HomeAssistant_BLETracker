@@ -15,7 +15,7 @@ typedef struct BLE_User{
 }BLE_User;
 
 //定义需要追踪的蓝牙MAC地址(小写)，名称可以自定义，RSSI强度设置为在线状态的最低阈值
-const BLE_User BLE_Users = {/*名称*/"MI Band 7 NFC",/*设备蓝牙MAC地址*/"c2:04:0b:02:03:42",/*设备在线时RSSI下限*/-80};
+const BLE_User BLE_Users = {/*名称*/"MI Band 7 NFC",/*设备蓝牙MAC地址*/"00:00:00:00:00:00",/*设备在线时RSSI下限*/-80};
 
 #define BLE_OffLine_N 3//BLE设备确认处于离线状态的扫描次数
 #define BLE_Buff 50 //蓝牙列表大小，缓冲设备数量
