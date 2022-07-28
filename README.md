@@ -28,6 +28,12 @@ __本项目目前为Demo版，暂无后续更新计划...__
 > 
 > * `Presence_Config`、`RSSI_Config`、`Availability_topic`、`Presence_State`、`RSSI_State`和MQTT Discovery相关，如若修改请确定已认真阅读HomeAssistant MQTT Discovery官方文档[HomeAssistant MQTT Discovery官方文档](https://www.home-assistant.io/docs/mqtt/discovery/)
 
+### `BLETracker.h`
+> |  变量   | 备注  |
+> |  :-:  | :-  |
+> | `BLE_OffLine_N`  |  连续`BLE_OffLine_N`次扫描，没有扫描到蓝牙设备，确认其为离线状态|
+> | `BLE_Buff`  | 每次扫描蓝牙设备，缓冲区大小，大于最多扫描到蓝牙设备数量 |
+> | `scanTime`  | 执行一次扫描的时间 |
 ##
 * 将软件程烧录到ESP32C3中
 测试使用小米手环7打开蓝牙广播
