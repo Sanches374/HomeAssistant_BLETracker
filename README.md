@@ -16,7 +16,8 @@
 > * 开发板配置参考B站专栏：[使用PlatformIo 把玩 合宙ESP32-C2](https://www.bilibili.com/read/cv16215201)
 
 ## 文件配置
-> * 修改`config.h`
+> * 修改`config.h`文件中的`ssid`、`password`为需要连接的WIFI名和密码
+> `ssid`
 ##
 * 将软件程烧录到ESP32C3中
 测试使用小米手环7打开蓝牙广播
