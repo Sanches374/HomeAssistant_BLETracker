@@ -17,7 +17,8 @@ __本项目目前为Demo版，暂无后续更新计划...__
 > * VScode+platformio  相关配置教程网上有很多
 > * 开发板配置参考：
 > 
->   B站专栏：[使用PlatformIo 把玩 合宙ESP32-C2](https://www.bilibili.com/read/cv16215201)  ,并在`.json`文件的`"frameworks"`中添加`"arduino"`   
+>   B站专栏：[使用PlatformIo 把玩 合宙ESP32-C2](https://www.bilibili.com/read/cv16215201)  ,并在`.json`文件的`"frameworks"`中添加`"arduino"`  
+>    
 >   CSDN：[使用PlatformIo 开发 合宙ESP32-C3](https://blog.csdn.net/qq_45355603/article/details/125255197)
 
 ## 文件配置
